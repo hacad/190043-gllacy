@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Sviatoslav](https://up.htmlacademy.ru/htmlcss/15/user/190043).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/id41580).
 
 ---
 
