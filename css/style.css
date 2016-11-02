@@ -2,7 +2,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 22px;
-    color: #fff;
+    color: #000;
     font-weight: normal;
 }
 
@@ -10,4 +10,225 @@ h1, h2 {
     font-size: 35px;
     line-height: 41px;
     font-weight: bold;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-header {
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 860px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    outline: red solid 1px;
+}
+
+.logo {
+    float: left;
+    width: 175px;
+    margin-right: 5px;
+
+    outline: lightgreen solid 1px;
+}
+
+/*index page*/
+.main-navigation {
+    float: left;
+    width: 410px;
+    margin-right: 5px;
+
+    outline: lightgreen solid 1px;
+}
+
+.user-block {
+    float: left;
+    width: 265px;
+    
+    outline: lightgreen solid 1px;
+}
+
+.work-info {
+    float: right;
+    width: 200px;
+    text-align: right;
+    outline: lightgreen solid 1px;
+}
+
+.main-banners {
+    margin-bottom: 40px;
+}
+
+.info-teaser {
+    float: left;
+    padding-left: 20px;
+    margin-right: 20px;
+    width: 400px;
+    min-height: 230px;
+
+    outline: lightgreen solid 1px;
+}
+
+.info-teaser:last-child {
+    margin-right: 0;
+}
+
+.main-hits {
+    margin-bottom: 40px;
+}
+
+.main-hits-item {
+    float: left;
+    width: 200px;
+    min-height: 230px;
+    margin-right: 20px;
+
+    outline: lightgreen solid 1px;
+}
+
+.main-hits-item:last-child {
+    margin-right: 0;
+}
+
+.main-content {
+    padding: 15px 20px;
+    margin-bottom: 40px;
+    outline: lightgreen solid 1px;
+}
+
+.main-content-item {
+    float: left;
+    width: 400px;
+    min-height: 120px;
+    padding-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+
+    outline: lightgreen solid 1px;
+}
+
+.main-content-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.main-news {
+    margin-bottom: 40px;
+}
+
+.map {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    
+    outline: red solid 1px;
+}
+
+.main-footer {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.main-footer-social{
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+
+    outline: lightgreen solid 1px;
+}
+
+.main-footer-about {
+    float: left;
+    width: 180px;
+    margin-right: 20px;
+
+    outline: lightgreen solid 1px;
+}
+
+.main-footer-documents {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+
+    outline: lightgreen solid 1px;
+}
+
+.main-footer-copyright {
+    float: left;
+    width: 200px;
+
+    outline: lightgreen solid 1px;
+}
+
+/*catalog page*/
+.breadcrumb {
+    float: left;
+
+    outline: lightgreen solid 1px;
+}
+
+.filter-form {
+    margin-bottom: 30px;
+}
+
+.filter-group-sort {
+    float: left;
+    width: 195px;
+    margin-right: 10px;
+    margin-left: 0;
+    padding: 0 0;
+
+    outline: lightgreen solid 1px;
+}
+
+.filter-group-range {
+    float: left;
+    width: 220px;
+    margin-right: 10px;
+    margin-left: 0;
+    padding: 0 0;
+
+    outline: lightgreen solid 1px;
+}
+
+.filter-group-fatness {
+    float: left;
+    width: 410px;
+    margin: 0 0;
+    padding: 0 0;
+
+    outline: lightgreen solid 1px;
+}
+
+.filter-group-filler {
+    float: left;
+}
+
+.filter-group-btnsubmit {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.catalog-list {
+    margin-bottom: 85px;
+    outline: lightgreen solid 1px;
+}
+
+.catalog-hits-item {
+    float: left;
+    min-height: 280px;
+    width: 200px;
+    margin: 0 20px 40px 0;
+}
+
+.catalog-hits-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.pagination {
+    text-align: right;
 }
