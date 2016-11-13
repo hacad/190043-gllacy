@@ -55,17 +55,13 @@ h1, h2 {
   background-image: url("../img/slide-3.png");
 }
 
-.content-wrapper {
-    width: 900px;
-    margin: 0 auto;
-    outline: 1px solid blue;
-}
-
 .slider {
     position: relative;
     padding-top: 270px;
     text-align: center;
     color: #fff;
+    margin-bottom: 35px;
+    outline: 1px solid lightgreen;
 }
 
 .slide {
@@ -95,29 +91,16 @@ h1, h2 {
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
     background: #f26843;
-    /*
-    background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-    background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-    background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-    */
     border-radius: 100px;
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .slide-btn:hover {
-    /*
-    background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-    background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-    */
     background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
     box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slide-btn:active {
-    /*
-    background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-    */
     background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
@@ -459,17 +442,21 @@ a:hover + .sub-menu {
 .btn {
     text-align: center;
     background-image: linear-gradient(#e84c36, #f16743);
-    /*background-image: linear-gradient(#e74a35, #f26843);*/
     border-radius: 30px;
-    box-shadow: 0 2px 2px 0 #ac1000;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+    background: #f26843;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    cursor: pointer;
 }
 
 .btn:hover {
-    background-color: inherit;
-    background-image: linear-gradient(#f58669, #ec6f5e);
-    box-shadow: 0 1px 2px 0 #ac1000;
-    /*background-image: linear-gradient(#ec6f5e, #f58669);
-    box-shadow: 0 2px 2px 0 #ac1000;*/
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.btn:active {
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .info-teaser-btn {
@@ -498,8 +485,6 @@ a:hover + .sub-menu {
 }
 
 .main-hits {
-    /*margin-bottom: 40px;*/
-
     outline: lightgreen solid 1px;
 }
 
@@ -508,13 +493,12 @@ a:hover + .sub-menu {
     width: 200px;
     min-height: 230px;
     margin-right: 20px;
-    /*margin-bottom: 40px;*/
     position: relative;
 
     outline: lightgreen solid 1px;
 }
 
-.main-hits-item > img {
+.hits-item > img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -531,11 +515,11 @@ a:hover + .sub-menu {
 }
 
 
-.main-hits-item-hover {
+.hits-item-hover {
    display: none;
 }
 
-.main-hits-item:hover .main-hits-item-hover {
+.hits-item:hover .hits-item-hover {
     display: block;
     background-color: rgba(248, 247, 244, 0.3);
     border-radius: 5px;
@@ -545,24 +529,9 @@ a:hover + .sub-menu {
     left: -10px;
     top: -1%;
     width: 220px;
+    z-index: 10;
 }
-/*
-.main-hits-item:hover::after {
-    background-color: rgba(248, 247, 244, 0.3);
-    /*background-color: rgba(171, 188, 179, 0.3);* /
-    border-radius: 5px;
-    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
-    content: "";
-    display: block;
-    height: 102%;
-    position: absolute;
-    left: -10px;
-    top: -1%;
-    width: 220px;
-    /*WTF??* /
-    z-index: -1;
-}
-*/
+
 .hits-item-price {
     font-size: 30px;
     font-weight: 700;
@@ -846,6 +815,9 @@ a:hover + .sub-menu {
     opacity: 1;
 }
 
+/*
+Q: Why there is "padding-left" 
+*/
 .social-btn-twitter::before {
     background-image: url("../img/social.png");
     background-position: -5px -47px;
@@ -961,8 +933,41 @@ a:hover + .sub-menu {
 /*catalog page*/
 .breadcrumb {
     float: left;
-
+    padding: 0;
     outline: lightgreen solid 1px;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    vertical-align: top;
+    color: #c9d4ce;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.breadcrumb a {
+    color: #c9d4ce;
+    font-size: 14px;
+    line-height: 16px;
+    border-bottom: 1px solid #aebeb5;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.breadcrumb a:hover {
+    color: #ffbc9e;
+    border-bottom: 1px solid #ffbc9e;
+}
+
+.breadcrumb .raquo {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 7px;
+    margin-right: 4px;
 }
 
 .filter-form {
@@ -1017,7 +1022,8 @@ a:hover + .sub-menu {
     vertical-align: top;
     min-height: 280px;
     width: 200px;
-    margin: 0 15px 40px 0;
+    margin-right: 15px;
+    position: relative;
 }
 
 .catalog-hits-item:nth-child(4n) {
@@ -1026,4 +1032,35 @@ a:hover + .sub-menu {
 
 .pagination {
     text-align: right;
+}
+
+.pagination > ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.pagination li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pagination a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    height: 26px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 7px 5px 0 5px;
+    text-align: center;
+    vertical-align: top;
+    width: 22px;
+    text-decoration: none;
+    color: #fff;
+}
+.pagination a:active, .pagination .pagination-item-active {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #323232;
 }
