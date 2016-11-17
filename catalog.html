@@ -38,12 +38,53 @@
             <div class="user-block">
                 <div class="user-block-search">
                     <a class="user-block-btn btn-search" href="#">Поиск</a>
+                    <form class="user-block-form search-form" action="#" method="get">
+                        <input class="search-input-field" id="search-field" name="search" type="text" placeholder="Что ищем?">
+                        <button type="submit">Искать</button>
+                    </form>
                 </div>
                 <div class="user-block-login">
                     <a class="user-block-btn btn-login" href="#">Вход</a>
+                    <form class="user-block-form login-form" action="#" method="post">
+                        <input class="login-input-field" id="login-field" name="login" type="text" placeholder="Электронная почта">
+                        <input class="password-input-field" id="password-field" name="password" type="password" placeholder="Пароль">
+                        <button class="btn" type="submit">Войти</button>
+                        <div class="login-help-links">
+                            <a href="#">Забыли пароль?</a>
+                            <a href="#">Новая регистрация</a>
+                        </div>
+                    </form>
                 </div>
                 <div class="user-block-cart">
                     <a class="user-block-btn btn-cart" href="#">Пусто</a>
+                    <form class="user-block-form cart-form" action="#" method="post">
+                        <table class="cart-list">
+                            <tbody>
+                                <tr class="cart-list-item">
+                                    <td class="cart-list-item-remove">
+                                        <span class="cart-list-item-remove-icon">X</span>
+                                    </td>
+                                    <td class="cart-list-item-img"><img src="../img/cart-item-1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
+                                    <td class="cart-list-item-description">Пломбир с апельсиновым джемом</td>
+                                    <td class="cart-list-item-price">1,5кг <span>x 200 руб.</span></td>
+                                    <td class="cart-list-item-count">300 руб.</td>
+                                </tr>
+                                <tr class="cart-list-item">
+                                    <td class="cart-list-item-remove">
+                                        <span class="cart-list-item-remove-icon">X</span>
+                                    </td>
+                                    <td class="cart-list-item-img"><img src="../img/cart-item-2.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
+                                    <td class="cart-list-item-description">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                    <td class="cart-list-item-price">1,5кг <span>x 300 руб.</span></td>
+                                    <td class="cart-list-item-count">450 руб.</td>
+                                </tr>
+                                <tr class="cart-list-item">
+                                    <td class="cart-list-total" colspan="5">Итого: 750 руб.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button type="submit" class="btn cart-btn">Оформить заказ</button>
+                    </form>
                 </div>
             </div>
         </div>

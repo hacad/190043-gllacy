@@ -25,6 +25,15 @@ h1, h2 {
     clear: both;
 }
 
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    border: 1px solid rgba(70, 70, 70, 0.48);
+    border-radius: 3px;
+    color: #323232;
+    font-size: 14px;
+    line-height: 24px;
+    min-height: 29px;
+    padding: 10px 10px;
+}
 
 /*slider*/
 .site-wrapper {
@@ -32,7 +41,6 @@ h1, h2 {
     background-color: #849d8f;
     background-image: url("../img/slide-1.png");
     background-repeat: no-repeat;
-    /*background-position: top center;*/
     background-position: center 90px;
 
     transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -183,7 +191,7 @@ h1, h2 {
     outline: lightgreen solid 1px;
 }
 
-a:hover + .sub-menu {
+li:hover .sub-menu {
     display: block;
 }
 
@@ -211,7 +219,7 @@ a:hover + .sub-menu {
     border-bottom: 1px solid #a9bbb1;
 }
 
-.main-menu > li > a:hover {
+.main-menu > li:hover > a {
     color: #000;
     background-color: #f7f6f3;
     padding: 10px 14px;
@@ -299,6 +307,7 @@ a:hover + .sub-menu {
 .user-block-cart {
     display: inline-block;
     vertical-align: bottom;
+    position: relative;
 }
 
 .user-block-btn {
@@ -386,6 +395,155 @@ a:hover + .sub-menu {
     background-position: -36px -5px;
 }
 
+/*
+Menu forms
+*/
+
+.user-block-form {
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.6);
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.search-form {
+    left: -285px;
+    top: 50px;
+    width: 337px;
+    padding: 20px 15px;
+}
+
+.search-form > button[type="submit"] {
+    display: none;
+}
+
+.search-input-field {
+    width: 315px;
+    display: block;
+}
+
+.btn-search:hover + .search-form {
+    display: block;
+}
+
+.login-form {
+    left: -117px;
+    min-height: 174px;
+    padding: 20px;
+    top: 50px;
+    width: 260px;
+}
+
+.login-form > button[type="submit"] {
+    border: none;
+    color: #fefefe;
+    padding: 10px 25px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.login-input-field,
+.password-input-field {
+    width: 240px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.login-help-links > a {
+    font-size: 24px;
+    font-size: 13px;
+    color: #323232;
+    text-decoration: none;
+    border-bottom: 1px solid #adacaa;
+}
+
+.login-help-links > a:hover {
+    color: #ffbc9e;
+    border-bottom: 1px solid #ffbc9e;
+}
+
+.login-help-links {
+    float: right;
+    width: 120px;
+}
+
+.btn-login:hover + .login-form {
+    display: block;
+}
+
+.cart-form {
+    padding: 20px 15px;
+    width: 510px;
+    right: 0;
+    top: 50px;
+}
+
+.cart-list {
+    font-size: 13px;
+    line-height: 16px;
+    color: #7e7e7d;
+}
+
+.cart-list-item-remove-icon {
+    cursor: pointer;
+}
+
+.cart-list td {
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.cart-list-item-img > img {
+    border-radius: 50%;
+}
+
+.cart-list-item-price > span {
+    color: #b2b2b1;
+}
+
+.cart-list-total {
+    font-size: 16px;
+    padding: 0 10px;
+    position: relative;
+    text-align: right;
+    color: #333333;
+    font-weight: 700;
+}
+
+.cart-list-total::before {
+    background-color: #adacaa;
+    content: "";
+    height: 1px;
+    left: 6px;
+    position: absolute;
+    right: 9px;
+    top: 0px;
+}
+
+.cart-form > button[type="submit"] {
+    border: none;
+    color: #fefefe;
+    padding: 10px 25px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    float: right;
+}
+
+.btn-cart:hover + .cart-form {
+    display: block;
+}
+
+/*
+Menu forms
+*/
+
+
 .work-info {
     float: right;
     width: 200px;
@@ -426,7 +584,6 @@ a:hover + .sub-menu {
     margin-right: 0;
 }
 
-/*Q: is it best to use more specific (".info-teaser > h2" instead of ".info-teaser h2")*/
 .info-teaser > h2 {
     font-size: 35px;
     line-height: 41px;
@@ -441,7 +598,6 @@ a:hover + .sub-menu {
 
 .btn {
     text-align: center;
-    background-image: linear-gradient(#e84c36, #f16743);
     border-radius: 30px;
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
     background: #f26843;
@@ -468,8 +624,7 @@ a:hover + .sub-menu {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
-    min-height: 24px;
-    padding: 10px 24px 10px 22px;
+    padding: 10px 15px;
 
     position: absolute;
     bottom: 20px;
@@ -722,19 +877,21 @@ a:hover + .sub-menu {
 }
 
 .newsletter input {
-    width: 228px;
+    width: 200px;
     height: 42px;
     display: inline-block;
     vertical-align: bottom;
+    font-size: 16px;
+    padding: 0px 10px;
 }
 
 .newsletter .info-teaser-btn {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
     width: 128px;
     position: static;
     color: #fefefe;
-    padding: 10px 15px;
+    border: none;
 }
 
 .map {
