@@ -1072,6 +1072,14 @@ feedback
     opacity: 1;
 }
 
+.social-btn:active {
+    box-shadow: 0 2px 4px #888 inset;
+}
+
+.social-btn:active::before {
+    top: 2px;
+}
+
 .social-btn-twitter::before {
     background-image: url("../img/socialsprite.png");
     background-position: -5px -47px;
