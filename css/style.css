@@ -48,18 +48,17 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     outline: 1px solid maroon;
 }
 
-.site-wrapper:before,
-.site-wrapper:after {
+.site-wrapper::before,
+.site-wrapper::after {
   content: "";
-
   visibility: hidden;
 }
 
-.site-wrapper:before {
+.site-wrapper::before {
   background-image: url("../img/slide-2.png");
 }
 
-.site-wrapper:after {
+.site-wrapper::after {
   background-image: url("../img/slide-3.png");
 }
 
@@ -165,7 +164,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 /*slider*/
 
 .main-header {
-    margin-top: 10px;
+    padding-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -651,6 +650,7 @@ Menu forms
 }
 
 .main-hits {
+    margin-bottom: 40px;
     outline: lightgreen solid 1px;
 }
 
@@ -664,13 +664,19 @@ Menu forms
     outline: lightgreen solid 1px;
 }
 
-.hits-item > img {
+.hits-item-inner {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.hits-item-inner > img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
 }
 
-.main-hits-item::before {
+.main-hits-item-inner::before {
     background-image: url("../img/hit.png");
     content: "";
     height: 61px;
@@ -690,7 +696,7 @@ Menu forms
     background-color: rgba(248, 247, 244, 0.3);
     border-radius: 5px;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
-    height: 110%;
+    height: 120%;
     position: absolute;
     left: -10px;
     top: -1%;
@@ -702,8 +708,9 @@ Menu forms
     font-size: 30px;
     font-weight: 700;
     line-height: 45px;
-    position: relative;
-    top: -65px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
 }
 
 .hits-item-price > img {
@@ -717,9 +724,7 @@ Menu forms
 }
 
 .hits-item-link-wrapper {
-    position: relative;
     text-align: center;
-    top: -45px;
 }
 
 .hits-item-link-wrapper > a {
