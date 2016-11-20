@@ -965,7 +965,6 @@ feedback
     width: 435px;
     padding: 20px 25px 25px 20px;
     border-radius: 10px;
-
     background-color: #f8f7f4;
     
     
@@ -980,7 +979,6 @@ feedback
 }
 
 .feedback-form-show {
-    animation: 0.6s ease 0s normal none 1 running bounce;
     display: block;
 }
 
@@ -1001,6 +999,7 @@ feedback
 
 .feedback-form textarea {
     width: 420px;
+    min-height: 150px;
 }
 
 .feedback-form .btn {
@@ -1073,9 +1072,6 @@ feedback
     opacity: 1;
 }
 
-/*
-Q: Why there is "padding-left" 
-*/
 .social-btn-twitter::before {
     background-image: url("../img/socialsprite.png");
     background-position: -5px -47px;
@@ -1234,13 +1230,10 @@ Q: Why there is "padding-left"
     color: #fff;
 }
 
-.filter-form > fieldset {
+.filter-item {
     display: inline-block;
     vertical-align: top;
-}
-
-.filter-item {
-    margin: 0 15px 12px 0;
+    margin: 0 20px 12px 0;
     padding: 0;
     border: none;
 }
@@ -1369,7 +1362,7 @@ Q: Why there is "padding-left"
     background-position: -98px -37px;
     background-repeat: no-repeat;
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 21px;
     height: 22px;
@@ -1395,13 +1388,16 @@ Q: Why there is "padding-left"
     background-position: -95px -5px;
 }
 
+.filter-btnsubmit-wrapper {
+    vertical-align: bottom;
+}
+
 .filter-btnsubmit {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     border: 2px solid #fff;
     color: #fff;
-    margin: 30px 0 0 0;
-    padding: 8px 26px;
+    padding: 8px 30px;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -1505,7 +1501,8 @@ Q: Why there is "padding-left"
     vertical-align: top;
 }
 
-.pagination a {
+.pagination a,
+.pagination span {
     display: inline-block;
     font-size: 16px;
     line-height: 18px;
@@ -1523,4 +1520,14 @@ Q: Why there is "padding-left"
     background-color: #fff;
     border-radius: 50%;
     color: #323232;
+}
+
+.pagination .inactive {
+    color: #9db1a5;
+}
+
+.pagination .pagination-btn-next,
+.pagination .pagination-btn-prev {
+    font-size: 30px;
+    padding-top: 6px;
 }

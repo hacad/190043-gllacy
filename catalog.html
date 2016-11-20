@@ -13,7 +13,7 @@
     <header class="main-header">
         <div class="container clearfix">
             <div class="logo">
-                <img src="img/menu-logo.png" width="154" height="64" alt="gllacy">
+                <a href="index.html"><img src="img/menu-logo.png" width="154" height="64" alt="gllacy"></a>
             </div>
             <nav class="main-navigation">
                 <ul class="main-menu">
@@ -93,11 +93,11 @@
         <div class="clearfix">
             <ol class="breadcrumb">
                 <li>
-                    <a href="#">Главная</a>
+                    <a href="index.html">Главная</a>
                     <span class="raquo">&raquo;</span>
                 </li>
                 <li>
-                    <a href="#">Каталог</a>
+                    <a href="catalog.html">Каталог</a>
                     <span class="raquo">&raquo;</span>
                 </li>
                 <li>
@@ -159,7 +159,9 @@
                     <label class="filter-checkbox"><input type="checkbox" name="jam" value="jam" id="jam-field"><span class="filter-checkbox-indicator"></span>Джемы</label>
                 </div>
             </fieldset>
-            <button class="filter-btnsubmit" type="submit">Применить</button>
+            <div class="filter-item filter-btnsubmit-wrapper">
+                <button class="filter-btnsubmit" type="submit">Применить</button>
+            </div>
         </form>
         <section class="catalog-list clearfix">
             <article class="catalog-hits-item hits-item">
@@ -285,13 +287,13 @@
         </section><!--catalog-list-->
         <nav class="pagination">
             <ul>
-                <li><a class="pagination-btn-prev" href="#">&lt;</a></li>
-                <li><a class="pagination-item-active" href="#">1</a></li>
+                <li><span class="pagination-btn-prev inactive">&lsaquo;</span></li>
+                <li><span class="pagination-item-active">1</span></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a class="pagination-btn-next-active" href="#">&gt;</a></li>
+                <li><a class="pagination-btn-next " href="#">&rsaquo;</a></li>
             </ul>
         </nav>
     </main>
@@ -312,7 +314,7 @@
         </section>
         <section class="main-footer-copyright">
             <img src="img/htmlacademy-logo.png" height="38" width="108" alt="HTML academy logo">
-            <div>Сделано в <a href="#">HTML academy</a> &copy; 2016</div>
+            <div>Сделано в <a href="http://htmlacademy.ru">HTML academy</a> &copy; 2016</div>
         </section>
     </footer>
 </body>
