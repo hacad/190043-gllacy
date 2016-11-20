@@ -41,7 +41,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     background-color: #849d8f;
     background-image: url("../img/slide-1.png");
     background-repeat: no-repeat;
-    background-position: center 90px;
+    background-position: center top;
 
     transition: background-image 0.5s ease, background-color 0.5s ease;
 
@@ -319,7 +319,7 @@ li:hover .sub-menu {
 
 .user-block-btn {
     text-decoration: none;
-    background-color: #abc2b5;
+    background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
     display: inline-block;
     border-radius: 16px;
@@ -1050,8 +1050,8 @@ feedback
 
 /*footer*/
 .main-footer {
-    margin-top: 35px;
-    margin-bottom: 25px;
+    padding-top: 35px;
+    padding-bottom: 25px;
 }
 .main-footer-social {
     float: left;
@@ -1062,7 +1062,7 @@ feedback
 }
 
 .social-btn {
-    border: 4px solid #c2cec7;/*rgba(194, 206, 199, 1);*/
+    border: 4px solid #c2cec7;
     border-radius: 50%;
     display: inline-block;
     font-size: 0;
