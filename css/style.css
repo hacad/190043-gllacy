@@ -764,7 +764,8 @@ Menu forms
 }
 
 .main-content-item {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     width: 340px;
     min-height: 120px;
     padding-left: 70px;
