@@ -313,8 +313,9 @@ li:hover .sub-menu {
 .user-block-login,
 .user-block-cart {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
     position: relative;
+    padding-bottom: 10px;
 }
 
 .user-block-btn {
@@ -328,7 +329,9 @@ li:hover .sub-menu {
     line-height: 16px;
 }
 
-.user-block-btn:hover {
+.user-block-search:hover > .user-block-btn,
+.user-block-login:hover > .user-block-btn,
+.user-block-cart:hover > .user-block-btn {
     background-color: #f8f7f4;
     color: #323232;
 }
@@ -353,7 +356,7 @@ li:hover .sub-menu {
     left: 7px;
 }
 
-.btn-search:hover::before {
+.user-block-search:hover > .btn-search::before {
     background-position: -123px -113px;
 }
 
@@ -376,13 +379,13 @@ li:hover .sub-menu {
     left: 16px;
 }
 
-.btn-login:hover::before {
+.user-block-login:hover > .btn-login::before {
     background-position: -125px -34px;
 }
 
 .btn-cart {
     margin-top: 10px;
-    padding: 8px 25px 8px 45px;
+    padding: 8px 24px 8px 45px;
 }
 
 .btn-cart::before {
@@ -398,7 +401,7 @@ li:hover .sub-menu {
     left: 15px;
 }
 
-.btn-cart:hover::before {
+.user-block-cart:hover > .btn-cart::before {
     background-position: -36px -5px;
 }
 
@@ -433,7 +436,7 @@ Menu forms
     display: block;
 }
 
-.btn-search:hover + .search-form {
+.user-block-search:hover .search-form {
     display: block;
 }
 
@@ -479,7 +482,7 @@ Menu forms
     width: 120px;
 }
 
-.btn-login:hover + .login-form {
+.user-block-login:hover .login-form {
     display: block;
 }
 
@@ -542,7 +545,7 @@ Menu forms
     float: right;
 }
 
-.btn-cart:hover + .cart-form {
+.user-block-cart:hover .cart-form {
     display: block;
 }
 
