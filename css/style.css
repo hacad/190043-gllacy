@@ -750,7 +750,7 @@ Menu forms
 .main-content {
     background-image: url("../img/waffle-bg.png");
     background-position: 0 0;
-    background-repeat: no-repeat;
+    border-radius: 15px;
     padding: 15px 0 15px 20px;
     margin-bottom: 40px;
     color: #323232;
