@@ -1285,8 +1285,13 @@ feedback
     position: relative;
 }
 
+select::-ms-expand {
+    display: none;
+}
+
 .filter-select {
     -moz-appearance: none;
+    -webkit-appearance:none;
     background-color: transparent;
     border: 0 none;
     border-radius: 30px;
