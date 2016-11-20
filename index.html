@@ -229,6 +229,15 @@
                         <b>8 812 450-25-25</b><br> (с 10 до 20 ежедневно)
                     </p>
                     <a class="btn" href="form.html">Форма обратной связи</a>
+                    <div class="feedback-overlay"></div>
+                    <form class="feedback-form" action="#" method="post">
+                        <b class="title">Мы обязательно вам ответим!</b>
+                        <input id="name-field" name="name" type="text" placeholder="Как вас зовут?">
+                        <input id="email-field" name="email" type="email" placeholder="Ваша почта для ответа">
+                        <textarea id="feedback-text" name="feedback" placeholder="Напишите что-нибудь"></textarea>
+                        <button class="btn" type="submit" value="Отправить">Отправить</button>
+                        <button class="feedback-close"></button>
+                    </form>
                 </div>
             </div>
         </main>
@@ -253,6 +262,7 @@
             </section>
         </footer>
     </div>
+    <script type="text/javascript" src="./js/feedback.js"></script>
 </body>
 
 </html>
