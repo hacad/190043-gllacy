@@ -220,12 +220,18 @@ li:hover .sub-menu {
     border-bottom: 1px solid #a9bbb1;
 }
 
-.main-menu > li:hover > a {
+.main-menu > li:hover > a,
+.main-menu > li > .active  {
     color: #000;
     background-color: #f7f6f3;
     padding: 10px 14px;
     margin: 10px 0px;
     border-radius: 20px;
+}
+
+.main-menu > li > .active {
+    background-color: #d07058;
+    color: #fff;
 }
 
 .sub-menu {
