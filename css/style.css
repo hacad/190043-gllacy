@@ -205,6 +205,7 @@ li:hover .sub-menu {
 .main-menu li {
     display: inline-block;
     position: relative;
+    vertical-align: top;
 }
 
 .main-menu a {
@@ -588,11 +589,12 @@ Menu forms
     font-size: 35px;
     line-height: 41px;
     font-weight: 700;
+    margin: 15px 0 30px 0;
 }
 
 .info-teaser > p {
-    font-size: 22px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 700;
 }
 
@@ -846,6 +848,8 @@ Menu forms
     font-weight: 700;
     line-height: 30px;
     background: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    margin-right: 100px;
 }
 
 .newsletter {
