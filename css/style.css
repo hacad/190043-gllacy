@@ -611,11 +611,9 @@ Menu forms
 
 .info-teaser {
     float: left;
-    padding-left: 20px;
+    padding: 16px 20px;
     margin-right: 20px;
-    width: 400px;
-    min-height: 230px;
-    position: relative;
+    width: 380px;
     background-position: 0 0;
     background-repeat: no-repeat;
     outline: lightgreen solid 1px;
@@ -629,13 +627,14 @@ Menu forms
     font-size: 35px;
     line-height: 41px;
     font-weight: 700;
-    margin: 15px 0 30px 0;
+    margin: 0 0 25px 0;
 }
 
 .info-teaser > p {
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
+    margin: 0 0 20px 0;
 }
 
 .btn {
@@ -658,14 +657,12 @@ Menu forms
 }
 
 .info-teaser-btn {
+    float: right;
+    margin: 0;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
     padding: 10px 15px;
-
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
 }
 
 .info-raspberry {
@@ -874,7 +871,7 @@ Menu forms
     background-image: url("../img/blog-news-bg.png");
     background-position: 0 0;
     background-repeat: no-repeat;
-    min-height: 220px;
+    min-height: 184px;
 }
 
 .newpost > h2 {
@@ -898,7 +895,6 @@ Menu forms
     background-image: url("../img/newsletter-bg.png");
     background-position: 0 0;
     background-repeat: no-repeat;
-    min-height: 220px;
     width: 420px;
     padding: 0px;
 }
@@ -919,21 +915,19 @@ Menu forms
 }
 
 .newsletter-bg > p {
-    margin-bottom: 18px;
+    margin: 10px 0 18px 0;
 }
 
 .newsletter input {
     width: 200px;
-    height: 42px;
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
     font-size: 16px;
-    padding: 0px 10px;
 }
 
 .newsletter .info-teaser-btn {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     width: 128px;
     position: static;
     color: #fefefe;
