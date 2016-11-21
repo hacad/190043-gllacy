@@ -585,7 +585,6 @@ Menu forms
 Menu forms
 */
 
-
 .work-info {
     float: right;
     width: 200px;
@@ -659,11 +658,6 @@ Menu forms
 }
 
 .info-teaser-btn {
-    /*
-    Q: why this adds paddings/margins?
-    display: block;
-    float: right;
-    */
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -690,7 +684,7 @@ Menu forms
 .main-hits-item {
     float: left;
     width: 200px;
-    min-height: 230px;
+    min-height: 280px;
     margin-right: 20px;
     position: relative;
 
