@@ -77,8 +77,6 @@ input[type="password"]:focus, textarea:focus {
     background-position: center top;
 
     transition: background-image 0.5s ease, background-color 0.5s ease;
-
-    outline: 1px solid maroon;
 }
 
 .site-wrapper::before,
@@ -101,7 +99,6 @@ input[type="password"]:focus, textarea:focus {
     text-align: center;
     color: #fff;
     margin-bottom: 35px;
-    outline: 1px solid lightgreen;
 }
 
 .slide {
@@ -205,22 +202,17 @@ input[type="password"]:focus, textarea:focus {
     width: 860px;
     margin: 0 auto;
     padding: 0 20px;
-
-    outline: red solid 1px;
 }
 
 .logo {
     float: left;
     width: 160px;
-
-    outline: lightgreen solid 1px;
 }
 
 .main-navigation {
     float: left;
     width: 430px;
     margin-right: 5px;
-    outline: lightgreen solid 1px;
 }
 
 li:hover .sub-menu {
@@ -338,7 +330,6 @@ li:hover .sub-menu {
 .user-block {
     float: left;
     width: 265px;
-    outline: lightgreen solid 1px;
 }
 
 .user-block-search,
@@ -589,7 +580,6 @@ Menu forms
     float: right;
     width: 200px;
     text-align: right;
-    outline: lightgreen solid 1px;
 }
 
 .work-info > div:first-child {
@@ -616,7 +606,6 @@ Menu forms
     width: 380px;
     background-position: 0 0;
     background-repeat: no-repeat;
-    outline: lightgreen solid 1px;
 }
 
 .info-teaser:last-child {
@@ -675,7 +664,6 @@ Menu forms
 
 .main-hits {
     margin-bottom: 40px;
-    outline: lightgreen solid 1px;
 }
 
 .main-hits-item {
@@ -684,8 +672,6 @@ Menu forms
     min-height: 280px;
     margin-right: 20px;
     position: relative;
-
-    outline: lightgreen solid 1px;
 }
 
 .hits-item-inner {
@@ -786,7 +772,6 @@ Menu forms
     padding: 15px 0 15px 20px;
     margin-bottom: 40px;
     color: #323232;
-    outline: lightgreen solid 1px;
 }
 
 .main-content-title {
@@ -804,7 +789,6 @@ Menu forms
     padding-top: 12px;
     position: relative;
     margin: 0px;
-    outline: lightgreen solid 1px;
 }
 
 .main-content-item:nth-child(2n) {
@@ -939,7 +923,6 @@ Menu forms
     margin: 0 auto;
     padding: 0;
     position: relative;
-    outline: red solid 1px;
 }
 
 .map-info {
@@ -1089,8 +1072,6 @@ feedback
     float: left;
     width: 193;
     margin-right: 50px;
-
-    outline: lightgreen solid 1px;
 }
 
 .social-btn {
@@ -1174,8 +1155,6 @@ feedback
     float: left;
     width: 140px;
     margin-right: 30px;
-
-    outline: lightgreen solid 1px;
 }
 
 .main-footer-about > a,
@@ -1223,22 +1202,17 @@ feedback
     float: left;
     width: 170px;
     margin-right: 45px;
-
-    outline: lightgreen solid 1px;
 }
 
 .main-footer-copyright {
     float: left;
     width: 230px;
-
-    outline: lightgreen solid 1px;
 }
 
 /*catalog page*/
 .breadcrumb {
     float: left;
     padding: 0;
-    outline: lightgreen solid 1px;
 }
 
 .breadcrumb li {
@@ -1525,7 +1499,6 @@ select::-ms-expand {
 
 .catalog-list {
     margin-bottom: 85px;
-    outline: lightgreen solid 1px;
 }
 
 .catalog-hits-item {
