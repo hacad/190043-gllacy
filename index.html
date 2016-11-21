@@ -43,15 +43,24 @@
                     <div class="user-block-search">
                         <a class="user-block-btn btn-search" href="#">Поиск</a>
                         <form class="user-block-form search-form" action="#" method="get">
-                            <input class="search-input-field" id="search-field" name="search" type="text" placeholder="Что ищем?">
+                            <div class="field-wrapper">
+                                <input class="search-input-field" id="search-field" name="search" type="text" placeholder="Что ищем?">
+                                <label for="search-field">Что ищем?</label>
+                            </div>
                             <button type="submit">Искать</button>
                         </form>
                     </div>
                     <div class="user-block-login">
                         <a class="user-block-btn btn-login" href="#">Вход</a>
                         <form class="user-block-form login-form" action="#" method="post">
-                            <input class="login-input-field" id="login-field" name="login" type="text" placeholder="Электронная почта">
-                            <input class="password-input-field" id="password-field" name="password" type="password" placeholder="Пароль">
+                            <div class="field-wrapper">
+                                <input class="login-input-field" id="login-field" name="login" type="text" placeholder="Электронная почта">
+                                <label for="login-field">Электронная почта</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input class="password-input-field" id="password-field" name="password" type="password" placeholder="Пароль">
+                                <label for="password-field">Пароль</label>
+                            </div>
                             <button class="btn" type="submit">Войти</button>
                             <div class="login-help-links">
                                 <a href="#">Забыли пароль?</a>
@@ -240,9 +249,18 @@
                     <div class="feedback-overlay"></div>
                     <form class="feedback-form" action="#" method="post">
                         <b class="title">Мы обязательно вам ответим!</b>
-                        <input id="name-field" name="name" type="text" placeholder="Как вас зовут?">
-                        <input id="email-field" name="email" type="email" placeholder="Ваша почта для ответа">
-                        <textarea id="feedback-text" name="feedback" placeholder="Напишите что-нибудь"></textarea>
+                        <div class="field-wrapper">
+                            <input id="name-field" name="name" type="text" placeholder="Как вас зовут?">    
+                            <label for="name-field">Как вас зовут?</label>
+                        </div>
+                        <div class="field-wrapper">
+                            <input id="email-field" name="email" type="email" placeholder="Ваша почта для ответа">
+                            <label for="email-field">Ваша почта для ответа</label>
+                        </div>
+                        <div class="field-wrapper">
+                            <textarea id="feedback-text" name="feedback" placeholder="Напишите что-нибудь"></textarea>
+                            <label for="feedback-text">Напишите что-нибудь</label>
+                        </div>
                         <button class="btn" type="submit" value="Отправить">Отправить</button>
                         <button class="feedback-close"></button>
                     </form>

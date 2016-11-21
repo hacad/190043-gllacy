@@ -29,10 +29,43 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     border: 1px solid rgba(70, 70, 70, 0.48);
     border-radius: 3px;
     color: #323232;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     min-height: 29px;
     padding: 10px 10px;
+}
+
+input[type="text"]:hover, input[type="email"]:hover,
+input[type="password"]:hover, textarea:hover {
+    border: 2px solid rgba(70, 70, 70, 0.48);
+    padding: 9px 9px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus,
+input[type="password"]:focus, textarea:focus {
+    border: 2px solid rgba(46, 136, 228, 0.48);
+    padding: 9px 9px;
+}
+
+.field-wrapper {
+    position: relative;
+    padding-top: 13px;
+}
+
+.field-wrapper > label {
+    display: none;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.field-wrapper input:focus + label,
+.field-wrapper textarea:focus + label {
+    color: #5b9ddf;
+    display: block;
+    margin: 0 0 0 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /*slider*/
@@ -423,7 +456,7 @@ Menu forms
     left: -285px;
     top: 50px;
     width: 337px;
-    padding: 20px 15px;
+    padding: 5px 15px 15px 15px;
 }
 
 .search-form > button[type="submit"] {
@@ -1008,10 +1041,12 @@ feedback
     color: #323232;
 }
 
-.feedback-form input[type="text"],
-.feedback-form input[type="email"],
-.feedback-form textarea {
-    margin: 22px 0;
+.feedback-form input {
+    width: 100%;
+}
+
+.feedback-form .field-wrapper {
+    margin: 7px 0;
     display: block;
     width: 264px;
 }
