@@ -604,10 +604,6 @@ Menu forms
     margin-top: 7px;
 }
 
-.work-info.catalog-work-info {
-    margin-top: 0;
-}
-
 .work-info > div:first-child {
     font-size: 14px;
     line-height: 16px;
@@ -1261,6 +1257,16 @@ section.main-footer-copyright {
 }
 
 /*catalog page*/
+
+
+.work-info.catalog-work-info {
+    margin-top: 0;
+}
+
+.main-header.catalog-main-header {
+    margin-bottom: 0;
+}
+
 .breadcrumb {
     float: left;
     padding: 0;
@@ -1300,16 +1306,21 @@ section.main-footer-copyright {
     margin-right: 4px;
 }
 
+.catalog-title {
+    margin-top: 0;
+    margin-bottom: 21px;
+}
 /*Filter*/
 
 .filter-form {
     color: #fff;
+    margin-bottom: 24px;
 }
 
 .filter-item {
     display: inline-block;
     vertical-align: top;
-    margin: 0 20px 12px 0;
+    margin: 0 14px 12px 0;
     padding: 0;
     border: none;
 }
@@ -1389,16 +1400,16 @@ select::-ms-expand {
     border-radius: 30px;
     box-sizing: border-box;
     font-weight: 500;
-    line-height: 16px;
-    font-size: 14px;
+    line-height: 18px;
+    font-size: 16px;
     padding: 10px 15px;
 }
 
 .filter-radio,
 .filter-checkbox {
     cursor: pointer;
-    padding-left: 30px;
-    margin-right: 15px;
+    padding-left: 25px;
+    margin-right: 17px;
     position: relative;
 }
 
@@ -1471,6 +1482,7 @@ select::-ms-expand {
 
 .filter-btnsubmit-wrapper {
     vertical-align: bottom;
+    margin-right: 0px;
 }
 
 .filter-btnsubmit {
@@ -1506,6 +1518,7 @@ select::-ms-expand {
     font-weight: 500;
     height: 7px;
     padding: 15px;
+    width: 190px;
 }
 
 .price-controls-scale {
@@ -1515,8 +1528,8 @@ select::-ms-expand {
 }
 
 .price-controls-bar {
-    margin-left: 25%;
-    margin-right: 15%;
+    margin-left: 12%;
+    margin-right: 27%;
     background-color: #fff;
     height: 4px;
     position: relative;
@@ -1546,11 +1559,22 @@ select::-ms-expand {
     right: 0;
 }
 
+.filter-group-fatness {
+    margin-right: 0;
+}
 
+.filter-checkbox {
+    margin-left: 4px;
+}
+
+.filter-group-filler {
+    margin-right: 10px;
+}
 /*Filter*/
 
 .catalog-list {
-    margin-bottom: 85px;
+    margin-bottom: 20px;
+    padding-left: 5px;
 }
 
 .catalog-hits-item {
@@ -1558,7 +1582,8 @@ select::-ms-expand {
     vertical-align: top;
     min-height: 280px;
     width: 200px;
-    margin-right: 15px;
+    margin-right: 17px;
+    margin-bottom: 35px;
     position: relative;
 }
 
@@ -1586,13 +1611,9 @@ select::-ms-expand {
     display: inline-block;
     font-size: 16px;
     line-height: 18px;
-    height: 26px;
-    margin-left: 1px;
-    margin-right: 1px;
-    padding: 7px 5px 0 5px;
+    padding: 5px 8px;
     text-align: center;
     vertical-align: top;
-    width: 22px;
     text-decoration: none;
     color: #fff;
 }
@@ -1609,5 +1630,9 @@ select::-ms-expand {
 .pagination .pagination-btn-next,
 .pagination .pagination-btn-prev {
     font-size: 30px;
-    padding-top: 6px;
+}
+
+.catalog-footer {
+    margin-top: 35px;
+    border-top: 1px solid #a9bbb1;
 }
