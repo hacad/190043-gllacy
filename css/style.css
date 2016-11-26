@@ -47,6 +47,17 @@ input[type="password"]:focus, textarea:focus {
     padding: 9px 9px;
 }
 
+input::-webkit-input-placeholder {
+    color: #999;
+}
+
+input::-moz-placeholder {
+    color: #999;
+}
+
+input:-ms-input-placeholder {
+    color: #999;
+}
 .field-wrapper {
     position: relative;
     padding-top: 13px;
@@ -341,10 +352,10 @@ li:hover .sub-menu {
 .user-block-login,
 .user-block-cart {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
     position: relative;
     padding-bottom: 10px;
-    padding-top: 5px;
+    padding-top: 4px;
 
     outline: 1px solid blue;
 }
