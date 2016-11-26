@@ -24,7 +24,7 @@
                         <li>
                             <a href="#">Каталог</a>
                             <ul class="sub-menu">
-                                <li><span class="sub-menu-title">Новинки</span></li>
+                                <li><a class="sub-menu-title" href="#">Новинки</a></li>
                                 <li><a href="catalog.html">Сливочное</a></li>
                                 <li><a href="#">Щербеты</a></li>
                                 <li><a href="#">Фруктовый лёд</a></li>
@@ -47,7 +47,6 @@
                                 <input class="search-input-field" id="search-field" name="search" type="text" placeholder="Что ищем?">
                                 <label for="search-field">Что ищем?</label>
                             </div>
-                            <button type="submit">Искать</button>
                         </form>
                     </div>
                     <div class="user-block-login">
@@ -70,7 +69,7 @@
                     </div>
                     <div class="user-block-cart">
                         <a class="user-block-btn btn-cart" href="#">Пусто</a>
-                        <form class="user-block-form cart-form" action="#" method="post">
+                        <div class="user-block-form cart-form" action="#" method="post">
                             <table class="cart-list">
                                 <tbody>
                                     <tr class="cart-list-item">
@@ -96,8 +95,8 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <button type="submit" class="btn cart-btn">Оформить заказ</button>
-                        </form>
+                            <a class="btn cart-btn">Оформить заказ</a>
+                        </div>
                     </div>
                 </div>
                 <div class="work-info">
@@ -226,7 +225,7 @@
                                 и не слать всякой не нужной ерунды. Честно =)
                             </p>
                             <form class="newsletter-form" action="#" method="post">
-                                <input type="email" placeholder="Элекронная почта">
+                                <input name="email" id="email-field" type="email" placeholder="Элекронная почта">
                                 <button class="btn info-teaser-btn" type="submit">Отправить</button>
                             </form>
                         </div>
@@ -261,7 +260,7 @@
                             <label for="feedback-text">Напишите что-нибудь</label>
                         </div>
                         <button class="btn" type="submit" value="Отправить">Отправить</button>
-                        <button class="feedback-close"></button>
+                        <button class="feedback-close" type="button"></button>
                     </form>
                 </div>
             </div>

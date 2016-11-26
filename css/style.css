@@ -238,7 +238,7 @@ li:hover .sub-menu {
     position: relative;
     vertical-align: top;
     margin: 13px 2px 0px 2px;
-
+    padding-bottom: 10px;
     outline: 1px solid yellow;
 }
 
@@ -271,7 +271,7 @@ li:hover .sub-menu {
     display: none;
     left: -10px;
     padding: 0;
-    top: 52px;
+    top: 40px;
     width: 140px;
     background-color: #f8f7f4;
     border-radius: 5px;
@@ -289,15 +289,9 @@ li:hover .sub-menu {
 .sub-menu li:first-child {
     border-bottom: 1px solid #d1d0ce;
     display: block;
-    margin-left: 6px;
-    margin-right: 8px;
-    margin-top: 0;
-    padding-bottom: 4px;
-    padding-left: 16px;
-    padding-top: 11px;
 }
 
-.sub-menu-title {
+.sub-menu a.sub-menu-title {
     color: #000;
     font-size: 14px;
     line-height: 16px;
@@ -471,10 +465,6 @@ Menu forms
     padding: 5px 15px 15px 15px;
 }
 
-.search-form > button[type="submit"] {
-    display: none;
-}
-
 .search-input-field {
     width: 315px;
     display: block;
@@ -579,8 +569,7 @@ Menu forms
     top: 0px;
 }
 
-.cart-form > button[type="submit"] {
-    border: none;
+.cart-form > .cart-btn {
     color: #fefefe;
     padding: 10px 25px;
     font-size: 18px;
@@ -1568,7 +1557,7 @@ select::-ms-expand {
 }
 
 .filter-group-filler {
-    margin-right: 10px;
+    margin-right: 9px;
 }
 /*Filter*/
 
