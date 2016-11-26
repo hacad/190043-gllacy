@@ -29,8 +29,8 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     border: 1px solid rgba(70, 70, 70, 0.48);
     border-radius: 3px;
     color: #323232;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 24.3px;
     min-height: 29px;
     padding: 10px 10px;
 }
@@ -945,7 +945,7 @@ Menu forms
 .newsletter-form input:hover,
 .newsletter-form input:active,
 .newsletter-form input:focus {
-    padding: 4px 12px 4px 12px;
+    padding: 4px 14px;
 }
 
 .map {
@@ -983,7 +983,7 @@ Menu forms
 
 .map-info .btn {
     text-decoration: none;
-    color: #f9d3cb;
+    color: #fefefe;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -1020,7 +1020,7 @@ feedback
     width: 435px;
     padding: 20px 25px 25px 20px;
     border-radius: 10px;
-    background-color: #f8f7f4;
+    background-color: #fefefe;
     
     
     position: fixed;
