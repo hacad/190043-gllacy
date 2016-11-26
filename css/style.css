@@ -404,8 +404,8 @@ li:hover .sub-menu {
     position: relative;
 
     display: inline-block;
-    display: inline-block;
-
+    
+    vertical-align: top;
     text-decoration: none;
 
     color: #fff;
@@ -427,6 +427,8 @@ li:hover .sub-menu {
 
     width: 32px;
     height: 32px;
+
+    vertical-align: top;
 }
 
 .btn-search::before {
@@ -1052,6 +1054,8 @@ Menu forms
 
     margin-right: 100px;
 
+    vertical-align: top;
+
     color: #353535;
     background: rgba(255, 255, 255, .4);
 }
@@ -1163,6 +1167,7 @@ Menu forms
     margin-top: 5px;
     padding: 10px 30px;
 
+    vertical-align: top;
     text-decoration: none;
 
     color: #fefefe;
