@@ -1510,18 +1510,24 @@ section.main-footer-copyright {
     border-bottom: 1px solid #aebeb5;
 }
 
-.breadcrumb a:hover {
-    color: #ffbc9e;
-    border-bottom: 1px solid #ffbc9e;
+.breadcrumb a {
+    text-decoration:underline;
+
+    border: none;
 }
 
-.breadcrumb .raquo {
+.breadcrumb a:hover {
+    color: #ffbc9e;
+}
+
+
+.breadcrumb a::after {
     display: inline-block;
 
     margin-right: 4px;
     margin-left: 7px;
 
-    vertical-align: top;
+    content: '\00bb';
 }
 
 .catalog-title {
@@ -1896,7 +1902,7 @@ select::-ms-expand {
 .pagination a:hover:not(.pagination-btn-arrow)
  {
     background-color: rgba(255, 255, 255, .2);
-    
+
     border-radius: 50%;
 }
 
