@@ -1871,8 +1871,7 @@ select::-ms-expand {
     vertical-align: top;
 }
 
-.pagination a,
-.pagination span {
+.pagination a {
     font-size: 16px;
     line-height: 18px;
 
@@ -1886,11 +1885,19 @@ select::-ms-expand {
 
     color: #fff;
 }
+
 .pagination a:active,
 .pagination .pagination-item-active {
     color: #323232;
     border-radius: 50%;
     background-color: #fff;
+}
+
+.pagination a:hover:not(.pagination-btn-arrow)
+ {
+    background-color: rgba(255, 255, 255, .2);
+    
+    border-radius: 50%;
 }
 
 .pagination .inactive {
