@@ -5,9 +5,9 @@ var btnFeedbackShow = document.querySelector(".map-info .btn");
 var btnFeedbackClose = document.querySelector(".feedback-close");
 
 function showFeedbackForm(e) {
-  e.preventDefault();
-  feedbackOverlay.classList.add("feedback-overlay-show");
-  feedbackForm.classList.add("feedback-form-show");
+    e.preventDefault();
+    feedbackOverlay.classList.add("feedback-overlay-show");
+    feedbackForm.classList.add("feedback-form-show");
 }
 
 function closeFeedbackForm(e) {
